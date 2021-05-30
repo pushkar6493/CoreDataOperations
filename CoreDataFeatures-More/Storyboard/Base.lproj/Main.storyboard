@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+    </dependencies>
+    <scenes>
+        <!--CollegeListViewController-->
+        <scene sceneID="EML-Xw-iRA">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="CollegeListViewController" storyboardName="College" referencedIdentifier="CollegeListViewController" id="kN2-vW-9pX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xNU-Et-B9u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="795.6521739130435" y="75"/>
+        </scene>
+        <!--AddCollegeViewController-->
+        <scene sceneID="ngV-Lb-bWr">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AddCollegeViewController" storyboardName="College" referencedIdentifier="AddCollegeViewController" id="cs7-De-sm8" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jhm-7S-Fc0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1106" y="75"/>
+        </scene>
+        <!--StudentListViewController-->
+        <scene sceneID="XVh-HX-CRz">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="StudentListViewController" storyboardName="Student" referencedIdentifier="StudentListViewController" id="NDi-PK-Xhf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bew-I6-8yr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="793" y="133"/>
+        </scene>
+    </scenes>
+</document>
