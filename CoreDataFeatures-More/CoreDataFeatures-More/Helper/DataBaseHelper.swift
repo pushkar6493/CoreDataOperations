@@ -14,12 +14,13 @@ class DataBaseHelper {
     static var sharedinstance = DataBaseHelper()
     var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    func save(object: [String:String]) {
+    func save(object: [String:String], imageData: Data) {
         
         let college = NSEntityDescription.insertNewObject(forEntityName: "College", into: context) as! College
         college.name = object["name"]
         college.university = object["university"]
         college.city = object["city"]
+        college.image = imageData
         
         do{
             try context.save()
@@ -40,12 +41,13 @@ class DataBaseHelper {
         return college
     }
     
-    func EditCollegeDetail(object: [String:String], index: Int){
+    func EditCollegeDetail(object: [String:String], index: Int, imageData:Data){
         
         let collegeList = getCollegeData()
         collegeList[index].name = object["name"]
         collegeList[index].university = object["university"]
         collegeList[index].city = object["city"]
+        collegeList[index].image = imageData
         
         do {
             try context.save()

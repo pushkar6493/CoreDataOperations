@@ -32,9 +32,11 @@ class CollegeDetailViewController: UITableViewController, EditCollegeDelegate {
   
     override func viewWillAppear(_ animated: Bool)  {
         super.viewWillAppear(true)
+        // to get no. of students from perticular college
         if college?.students?.allObjects != nil{
             student = college?.students?.allObjects as! [Student]
         }
+        //total studetns of all colleges
         //DataBaseHelper.sharedinstance.getStudentData()
         lblStudents.text = "Students: \(student.count)"
 

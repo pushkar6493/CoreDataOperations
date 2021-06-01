@@ -9,6 +9,7 @@ import UIKit
 
 class CollegeTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var imgCollege: UIImageView!
     @IBOutlet weak var lblCollegeName: UILabel!
     @IBOutlet weak var lblCollegeUniversity: UILabel!
     @IBOutlet weak var lblCollegeCity: UILabel!
@@ -18,7 +19,7 @@ class CollegeTableViewCell: UITableViewCell {
             lblCollegeName.text = "Name :- \(college.name ?? "")"
             lblCollegeUniversity.text = "University :- \(college.university ?? "")"
             lblCollegeCity.text = "City :- \(college.city ?? "")"
-
+            imgCollege.image = UIImage(data: college.image!)
         }
     }
     
